@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="container">
+        <div id="todoOutput"></div>
+        <main class="formDownWards">
+        <form id="todoForm">
+            <input type="text" id="todoInput" placeholder="Add a new to-do">
+            <button type="submit" class="text-3xl font-bold underline"
+                >Add</button>
+        </form>
+        <div class="complePanel">
+        <p id="completedCountDisplay">Completed Tasks: 0</p>
+        <button id="delCompBtn"><i class="fa-solid fa-trash"></i></button>
+    </div>
+</main>
+    </div>
+    <script src="./dist/index.js"></script>
+</body>
+</html>
