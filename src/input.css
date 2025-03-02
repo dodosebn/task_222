@@ -1,1 +1,113 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding-top: 3rem;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+form {
+    display: flex;
+    gap: 0.8rem;
+}
+
+form > textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: none;
+}
+
+form > button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: none;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+form > button:hover {
+    background-color: #0056b3;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    margin-top: 0.8rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.todo-item button:hover {
+    color: #0056b3;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.complePanel {
+    /* display: none; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #eee;
+    border-radius: 8px;
+}
+
+.complePanel button {
+    background-color: red;
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.complePanel button:hover {
+    background-color: darkred;
+}
